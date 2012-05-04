@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25346CDE-3A44-4D48-860D-038E885EFBCC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RollTheDice</RootNamespace>
+    <AssemblyName>RollTheDice</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\mw3srvr\plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="addon, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\mw3srvr\addon\dist\addon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultDvars.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rolls\AntiCamp.cs" />
+    <Compile Include="Rolls\AssaultRifleGunGame.cs" />
+    <Compile Include="Rolls\Attractive.cs" />
+    <Compile Include="Rolls\Aura.cs" />
+    <Compile Include="Rolls\CharlieSheen.cs" />
+    <Compile Include="Rolls\ChooseYourOwnRoll.cs" />
+    <Compile Include="Rolls\Developer.cs" />
+    <Compile Include="Rolls\Fashionable.cs" />
+    <Compile Include="Rolls\Flashing.cs" />
+    <Compile Include="Rolls\Ghost.cs" />
+    <Compile Include="Rolls\Headless.cs" />
+    <Compile Include="Rolls\HideAndSeek.cs" />
+    <Compile Include="Rolls\Juggernaut.cs" />
+    <Compile Include="Rolls\Nightvision.cs" />
+    <Compile Include="Rolls\OverkillHeartbeat.cs" />
+    <Compile Include="Rolls\Rage.cs" />
+    <Compile Include="Rolls\RemoteTank.cs" />
+    <Compile Include="Rolls\SuperDamage.cs" />
+    <Compile Include="Rolls\SuperNovaAO.cs" />
+    <Compile Include="Rolls\Terminator.cs" />
+    <Compile Include="Rolls\Terrorist.cs" />
+    <Compile Include="Rolls\CocaineSprayer.cs" />
+    <Compile Include="Rolls\Deaf.cs" />
+    <Compile Include="Rolls\EMPGrenade.cs" />
+    <Compile Include="Rolls\ExtremeJuggernaut.cs" />
+    <Compile Include="Rolls\Briefcase.cs" />
+    <Compile Include="Rolls\BullsEye.cs" />
+    <Compile Include="Rolls\ChuckNorris.cs" />
+    <Compile Include="Rolls\Copycat.cs" />
+    <Compile Include="Rolls\DoubleHP.cs" />
+    <Compile Include="Rolls\EvenMoreOverpoweredFMG.cs" />
+    <Compile Include="Rolls\ExplosiveGunGame.cs" />
+    <Compile Include="Rolls\FiftyPerks.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roll.cs" />
+    <Compile Include="RollManager.cs" />
+    <Compile Include="Rolls\Blackouts.cs" />
+    <Compile Include="Rolls\Freeze.cs" />
+    <Compile Include="Rolls\GETTUDACHOPAAA.CS" />
+    <Compile Include="Rolls\GlassCanon.cs" />
+    <Compile Include="Rolls\GodMode.cs" />
+    <Compile Include="Rolls\Grenade.cs" />
+    <Compile Include="Rolls\JamesBond.cs" />
+    <Compile Include="Rolls\Kamikaze.cs" />
+    <Compile Include="Rolls\MassSlay.cs" />
+    <Compile Include="Rolls\Ninja.cs" />
+    <Compile Include="Rolls\NoCrosshair.cs" />
+    <Compile Include="Rolls\NoMACazines.cs" />
+    <Compile Include="Rolls\OneHitKill.cs" />
+    <Compile Include="Rolls\OneManArmy.cs" />
+    <Compile Include="Rolls\OPAGun.cs" />
+    <Compile Include="Rolls\Orgasm.cs" />
+    <Compile Include="Rolls\Rapist.cs" />
+    <Compile Include="Rolls\Retarded.cs" />
+    <Compile Include="Rolls\SantaClaus.cs" />
+    <Compile Include="Rolls\Sharpshooter.cs" />
+    <Compile Include="Rolls\OneInTheChamber.cs" />
+    <Compile Include="Rolls\PewPew.cs" />
+    <Compile Include="Rolls\ProMod.cs" />
+    <Compile Include="Rolls\RocketsNStuff.cs" />
+    <Compile Include="Rolls\Seizure.cs" />
+    <Compile Include="Rolls\ShotgunGunGame.cs" />
+    <Compile Include="Rolls\Smack.cs" />
+    <Compile Include="Rolls\Annoying.cs" />
+    <Compile Include="Rolls\BlackWhite.cs" />
+    <Compile Include="Rolls\BoltAction.cs" />
+    <Compile Include="Rolls\CSS.cs" />
+    <Compile Include="Rolls\Drunk.cs" />
+    <Compile Include="Rolls\ExtraHardcore.cs" />
+    <Compile Include="Rolls\Fat.cs" />
+    <Compile Include="Rolls\Forced.cs" />
+    <Compile Include="Rolls\NoGun.cs" />
+    <Compile Include="Rolls\Lag.cs" />
+    <Compile Include="Rolls\Night.cs" />
+    <Compile Include="Rolls\SniperGunGame.cs" />
+    <Compile Include="Rolls\Spam.cs" />
+    <Compile Include="Rolls\Sphere.cs" />
+    <Compile Include="Rolls\SubmachineGunGame.cs" />
+    <Compile Include="Rolls\Swimming.cs" />
+    <Compile Include="Rolls\TinCan.cs" />
+    <Compile Include="Rolls\TrueCamper.cs" />
+    <Compile Include="Rolls\UAV.cs" />
+    <Compile Include="Rolls\UberHardcore.cs" />
+    <Compile Include="Rolls\UnlimitedAmmo.cs" />
+    <Compile Include="Rolls\Useless.cs" />
+    <Compile Include="Rolls\Vampire.cs" />
+    <Compile Include="Rolls\WalkingAC130.cs" />
+    <Compile Include="Rolls\Hello.cs" />
+    <Compile Include="Rolls\WatchAndLearn.cs" />
+    <Compile Include="RTDConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTDConfig.Designer.cs">
+      <DependentUpon>RTDConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerwideRoll.cs" />
+    <Compile Include="ServerwideRolls\Cocaine.cs" />
+    <Compile Include="ServerwideRolls\HighJump.cs" />
+    <Compile Include="ServerwideRolls\Knockback.cs" />
+    <Compile Include="ServerwideRolls\PullBack.cs" />
+    <Compile Include="ServerwideRolls\RandomRoll.cs" />
+    <Compile Include="ServerwideRolls\SlowMotion.cs" />
+    <Compile Include="ServerwideRolls\Space.cs" />
+    <Compile Include="ThreadHandler.cs" />
+    <Compile Include="WeaponBuilder.cs" />
+    <Compile Include="Rolls\WeaponDealer.cs" />
+    <Compile Include="Rolls\WorldofWax.cs" />
+    <Compile Include="Rolls\RollTwice.cs" />
+    <Compile Include="Rolls\Sensitivity.cs" />
+    <Compile Include="Rolls\Bright.cs" />
+    <Compile Include="Rolls\EmptyRoll.cs" />
+    <Compile Include="Rolls\EyeRape.cs" />
+    <Compile Include="Rolls\ThirdPerson.cs" />
+    <Compile Include="Rolls\Wallhack.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTDConfig.resx">
+      <DependentUpon>RTDConfig.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTD.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

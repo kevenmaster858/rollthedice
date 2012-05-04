@@ -1,0 +1,2 @@
+numlines /s *.cs
+pause
