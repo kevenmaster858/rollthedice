@@ -65,6 +65,7 @@ namespace RollTheDice.Rolls
 
         public override void onRemove(ServerClient Client)
         {
+			isThreadRunning = false;
             Core.setGlowTweaks(Client, "0", "0.65", "0.65", "0.45", "6.07651");
             Owner.SetClientDvar(Client.ClientNum, "sensitivity \"15\"");
             Client.Other.SpeedScale = old;
